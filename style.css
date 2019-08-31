@@ -251,10 +251,16 @@ figure{
     justify-content: space-around;
 }
 
-.new_bg img{
+.bg{
     width: 50%;
-    height: auto;
+    object-fit: cover;
+    overflow: hidden;
     margin: 0 10px;
+}
+
+.bg img{
+    width: 100%;
+    height: auto;
 }
 
 .new{
@@ -520,14 +526,13 @@ figure{
         max-height: 305px;
     }
 
-    .image>a>img{
-        width: auto;
-        height: 100%;
+    .image>a>img {
+        max-height: 305px;
     }
 
-    .stm-plus{
+    .stm-plus {
         width: 100%;
-        height: 100%;
+        height: 305px;
     }
 }
 
@@ -537,12 +542,16 @@ figure{
     } */
 
     .image {
-        max-height: 280px;
+        max-height: 250px;
     }
 
     .image>a {
         display: flex;
         justify-content: center;
+    }
+
+    .image>a>img {
+        max-height: 250px;
     }
 
     .stm-plus{
@@ -562,11 +571,16 @@ figure{
 
 @media (max-width: 767.98px){
     .image {
-        max-height: 250px;
+        max-height: 180px;
         margin: 30px 5px 14px;
     }
 
+    .image>a>img {
+        max-height: 180px;
+    }
+
     .stm-plus{
+        height: 180px;
         font-size: 10px;
         z-index: 50;
         border-radius: 0;
@@ -575,7 +589,7 @@ figure{
 
     .stm-plus p{
         display: contents;
-        /* padding: 5px 10px; */
+        padding: 5px 10px;
     }
 
     .carousel.slide.btm {
@@ -590,7 +604,7 @@ figure{
 
     .image {
         width: 40%;
-        max-height: 220px;
+        height: 180px;
         margin: 10px auto;
     }
 
@@ -617,7 +631,7 @@ figure{
 @media (max-width: 375px){
     .image {
         width: 48%;
-        max-height: 200px;
+        height: 100%;
     }
 
     .image>a{
@@ -626,8 +640,8 @@ figure{
     }
 
     .image>a>img{
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 }
 

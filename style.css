@@ -53,9 +53,9 @@ section{
 }
 
 section h3{
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     color: #000;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40px;
     font-weight: 700;
 }
@@ -102,11 +102,11 @@ figure{
 }
 
 .nav ul li a{
-    padding: 0 24px;
+    padding: 0 35px;
     line-height: 80px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18.5px;
 }
 
 .nav ul li a:hover{
@@ -154,28 +154,32 @@ figure{
 
 @media (max-width: 1199.98px){
     .tp-mask h1{
-        font-size: 35px;
-        margin: 0 0 20px;
+        font-size: 38px;
+        margin: 0 0 15px;
     }
     
     .tp-mask h2{
-        font-size: 20px;
-        margin: 10px 0;
+        font-size: 22px;
+        margin: 8px 0;
     }
 }
 
 @media (max-width: 991.98px){
+    .nav{
+        display: none;
+    }
+
     .tp-mask{
-        top: 40%;
+        top: 35%;
     }
 
     .tp-mask h1{
-        font-size: 28px;
+        /* font-size: 28px; */
         margin: 0;
     }
     
     .tp-mask h2{
-        font-size: 18px;
+        /* font-size: 18px; */
         margin: 0;
     }
 
@@ -185,15 +189,9 @@ figure{
     }
 }
 
-@media (max-width: 767.98px){
-    .nav{
-        display: none;
-    }
-}
-
 @media (max-width: 575.98px){
     .tp-mask{
-        top: 10px;
+        top: 15%;
         left: 0;
         display: flex;
         flex-wrap: wrap;
@@ -245,8 +243,15 @@ figure{
 }
 
 /* ----- ----- */
+#new{
+    background: url(image/image_2019_08_25.png) center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .new_bg{
     width: 100%;
+    margin-top: 25px;
     overflow: hidden;
     justify-content: space-around;
 }
@@ -338,17 +343,17 @@ figure{
 
 @media (max-width: 575.98px){
     #new{
-        width: 90%;
-        margin: 0 auto;
+        padding: 80px 5%;
+        /* text-align: center; */
     }
 }
 
 /* ----- sec3 Sport ----- */
-#sport{
+/* #sport{
     background: url(image/image_2019_08_25.png) center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .league_baseball>a{
     width: cala( 25% - 10px );
@@ -356,13 +361,13 @@ figure{
     object-fit: cover;
     overflow: hidden;
     margin: 30px 10px;
-    box-shadow: 2px 2px 8px rgba(21,21,21,.5);
+    /* box-shadow: 2px 2px 8px rgba(21,21,21,.5); */
     transition: .3s;
 }
 
 .league_baseball>a:hover{
-    transform: translateY(-3px);
-    box-shadow: 2px 2px 10px rgba(21,21,21,.5);
+    transform: translateY(-5px);
+    /* box-shadow: 2px 2px 10px rgba(21,21,21,.5); */
 }
 
 .league_baseball>a>img{
@@ -389,13 +394,18 @@ figure{
 
 /* ----- sec6 Chose ----- */
 #chose{
-    background: url(image/image_2019_08_25T.png) center;
+    background: url(image/image_2019_08_25T.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .chose{
-    width: 85%;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.chose_title{
+    width: 60%;
     margin-left: 30px;
 }
 
@@ -516,10 +526,25 @@ figure{
     min-height: 450px;
 }
 
+@media (max-width: 1903px){
+    .chose{
+        width: 90%;
+    }
+
+    .chose_title{
+        width: 90%;
+    }
+}
+
 @media (max-width: 1199.98px){
     .chose{
         margin: 0 5%;
         justify-content: center;
+    }
+
+    .chose_title{
+        width: 100%;
+        margin-left: 0;
     }
 
     .image {
@@ -654,7 +679,7 @@ figure{
 
 #game .carousel-inner{
     width: 55%;
-    margin-left: 30px;
+    margin: 25px 0 0 30px;
 }
 
 .new_games{
@@ -663,10 +688,11 @@ figure{
 
 .title{
     width: 55%;
+    margin-left: 30px;
 }
 
 .box {
-    height: 560px;
+    height: 480px;
 }
 
 .media_gallery{
@@ -766,8 +792,8 @@ figure{
     }
 
     .title{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -846,7 +872,7 @@ figure{
     overflow: hidden;
     text-align: center;
     padding: 25px;
-    margin: 30px 10px;
+    margin: 0 10px 30px 10px;
 }
 
 
